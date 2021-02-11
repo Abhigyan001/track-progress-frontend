@@ -1,10 +1,9 @@
 import './App.css';
+import TopNav from './components/TopNav';
 
 function App() {
   return (
-    <div>
-      hola
-    </div>
+    <TopNav />
   );
 }
 
