@@ -10,7 +10,7 @@ const getHeadImage = (name, sex) => {
           url = './assets/images/female.jpg';
           break;
         default:
-          url = './assets/images/secret.png';
+          url = './assets/images/male.png';
       }
   }
   return url;
