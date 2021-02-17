@@ -7,28 +7,28 @@ export const slice = createSlice({
     login: false,
     currentUser: {},
     currentActivity: {},
-    currentPage: 'You.Fit',
+    currentPage: 'Track Progress',
     lastPage: '',
     goals: [
       {
-        kind: 'walking',
-        amount: 8000,
+        kind: 'html',
+        amount: 80,
       },
       {
-        kind: 'running',
+        kind: 'css',
         amount: 10,
       },
       {
-        kind: 'cycling',
+        kind: 'ruby',
         amount: 50,
       },
       {
-        kind: 'exercise',
+        kind: 'javascript',
         amount: 60,
       },
       {
-        kind: 'swimming',
-        amount: 1000,
+        kind: 'reactswimming',
+        amount: 10,
       },
     ],
   },
