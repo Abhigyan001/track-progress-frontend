@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import { createActivity, fetchActivities, updateActivities } from '../../../slices/activitiesSlice';
+import { setCurrentPage } from '../../../slices/statusSlice';
+
+
+import {
+  ACTIVITY_ICONS,
+  ACTIVITY_UNITS,
+  ACTIVITY_ACT,
+  ACTIVITY_UNITS_LONG,
+  ACTIVITY_CHANGE_VALUES,
+} from '../../../helpers/constant';
 
 const AddActivity = ({ activity }) => {
   const dispatch = useDispatch();

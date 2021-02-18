@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-
+import { setCurrentPage } from '../../slices/statusSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -11,16 +11,16 @@ const Navbar = () => {
       <Link
         to="/addData"
         onClick={() => {
-          dispatch(setCurrentPage('Add Readings'));
+          dispatch(setCurrentPage('Add Activities'));
         }}
       >
         <i className="fas fa-plus-square fa-3x" />
-        Add Readings
+        Add Activities
       </Link>
       <Link
-        to="/readings"
+        to="/activities"
         onClick={() => {
-          dispatch(setCurrentPage('Readings'));
+          dispatch(setCurrentPage('Activities'));
         }}
       >
         <i className="fas fa-chart-line fa-3x" />

@@ -9,11 +9,11 @@ const AddDataPage = () => {
   const selectPage = current => {
     const activity = current.split(' ')[1];
     switch (current) {
-      case 'add walking':
-      case 'add running':
-      case 'add cycling':
+      case 'add jogging':
+      case 'add pushup':
+      case 'add skipping':
+      case 'add squats':
       case 'add swimming':
-      case 'add exercise':
         return <AddActivity activity={activity} />;
       default:
         return <AddDataHome />;

@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
+import {
+  fetchUsers,
+  updateUsers,
+  createUser,
+  addUser,
+} from '../slices/usersSlice';
+import { sigIn, setCurrentUser } from '../slices/statusSlice';
+import { fetchActivities, updateActivities } from '../slices/activitiesSlice';
+import { showMessage } from '../helpers/index';
 
 const LoginPage = () => {
   const [inputName, setInputName] = useState('');
@@ -47,9 +55,9 @@ const LoginPage = () => {
     <div className="Login-page">
 
       <div className="App-logo">
-        <h2>You.Fit</h2>
-        <i className="fas fa-running fa-3x" />
-        <h3>Your Daily Fitness Friend.</h3>
+        <h2>Track Progress</h2>
+        <i className="fas fa-dumbbell fa-3x" />
+        <h3>Measure Your Daily Exercises.</h3>
       </div>
 
       <form onSubmit={handleLogin} className="Login-form">
@@ -61,9 +69,7 @@ const LoginPage = () => {
           maxLength="30"
           placeholder="Input Your Name ..."
         />
-        <div className="input-tips">
-          Tips: Try ~ Gregoire ~ to see demo Data.
-        </div>
+        
 
         <button type="submit" className="btn">Login</button>
       </form>
@@ -77,9 +83,8 @@ const LoginPage = () => {
         >
           Server is
           {' '}
-          {ready ? 'Online' : 'Offline'}
-          {' '}
-          now.
+          {ready ? 'Connected' : 'Not Connected'}        
+          
         </div>
 
         {
@@ -92,15 +97,6 @@ const LoginPage = () => {
             )
         }
 
-
-        <p>
-          <a href="https://github.com/kelvin8773/your-fitness">
-            <i className="fab fa-github-alt fa-2x" />
-          </a>
-          <a href="https://twitter.com/Kelvin9877">
-            <i className="fab fa-twitter fa-2x" />
-          </a>
-        </p>
       </div>
 
     </div>

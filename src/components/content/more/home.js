@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
+import { sigOut, setCurrentPage, setCurrentUser } from '../../../slices/statusSlice';
+import getHeadImage from '../../../helpers/headImage';
 
 const MoreHomePage = () => {
   const dispatch = useDispatch();

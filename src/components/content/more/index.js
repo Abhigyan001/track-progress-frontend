@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import MoreHomePage from './home';
-
+import EditUserPage from './editUser';
 
 const MorePage = () => {
   const { currentPage } = useSelector(state => state.status);

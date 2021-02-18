@@ -6,6 +6,15 @@ import {
   Route,
 } from 'react-router-dom';
 
+import Header from './top/Header';
+import Navbar from './bottom/Navbar';
+
+import HomePage from './content/HomePage';
+import AddDataPage from './content/add_data/index';
+import MorePage from './content/more/index';
+
+import ProgressPage from './content/progress/index';
+import ActivitiesPage from './content/activities/index';
 
 const AppPage = () => (
   <div className="App-page">

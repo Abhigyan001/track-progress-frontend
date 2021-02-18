@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-
+import ActivitiesHomePage from './home';
+import EditActivity from './editActivity';
 
 const ActivitiesPage = () => {
   const { currentPage } = useSelector(state => state.status);

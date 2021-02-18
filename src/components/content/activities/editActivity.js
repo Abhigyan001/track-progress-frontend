@@ -4,6 +4,20 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { lightFormat } from 'date-fns';
 
+import {
+  ACTIVITY_CHANGE_VALUES,
+  ACTIVITY_ICONS,
+} from '../../../helpers/constant';
+import {
+  updateActivity,
+  deleteActivity,
+  updateActivities,
+  fetchActivities,
+} from '../../../slices/activitiesSlice';
+import { setCurrentPage } from '../../../slices/statusSlice';
+import { getFinish, getColor } from '../../../helpers/activity';
+import { formatDate } from '../../../helpers/index';
+
 const EditActivity = () => {
   const dispatch = useDispatch();
   const { currentActivity, goals } = useSelector(state => state.status);
