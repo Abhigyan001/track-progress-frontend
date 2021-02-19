@@ -25,11 +25,11 @@ export const ACTIVITY_ACT = {
 };
 
 export const ACTIVITY_UNITS_LONG = {
-  jogging: "kilometers",
-  pushup: "sets",
-  skipping: "minutes",
-  squats: "minutes",
-  swimming: "meters",
+  jogging: 'kilometers',
+  pushup: 'sets',
+  skipping: 'minutes',
+  squats: 'minutes',
+  swimming: 'meters',
 };
 
 export const ACTIVITY_CHANGE_VALUES = {

@@ -29,5 +29,4 @@ const AddDataHome = () => {
   );
 };
 
-
 export default AddDataHome;

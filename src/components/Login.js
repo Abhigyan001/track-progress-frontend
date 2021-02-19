@@ -35,7 +35,6 @@ const LoginPage = () => {
           });
       }
 
-
       dispatch(sigIn());
       setInputName('');
     } else {
@@ -69,7 +68,6 @@ const LoginPage = () => {
           maxLength="30"
           placeholder="Input Your Name ..."
         />
-        
 
         <button type="submit" className="btn">Login</button>
       </form>
@@ -83,8 +81,8 @@ const LoginPage = () => {
         >
           Server is
           {' '}
-          {ready ? 'Connected' : 'Not Connected'}        
-          
+          {ready ? 'Connected' : 'Not Connected'}
+
         </div>
 
         {

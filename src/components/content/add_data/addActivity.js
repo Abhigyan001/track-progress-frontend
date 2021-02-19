@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { createActivity, fetchActivities, updateActivities } from '../../../slices/activitiesSlice';
 import { setCurrentPage } from '../../../slices/statusSlice';
 
-
 import {
   ACTIVITY_ICONS,
   ACTIVITY_UNITS,

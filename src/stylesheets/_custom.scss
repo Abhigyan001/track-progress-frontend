@@ -2,7 +2,7 @@ $content-width: 375px;
 $content-height: 667px;
 
 body {
-  background-color: #eeeeee;
+  background-color: #eee;
 
   .App {
     margin: 2rem auto;
@@ -11,8 +11,8 @@ body {
     border: 5px solid rgb(111, 0, 255);
     border-radius: 50px;
     text-align: center;
-    -webkit-box-shadow: 0px 1px 22px -1px rgba(0, 0, 0, 0.31);
-    box-shadow: 0px 1px 22px -1px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0 1px 22px -1px rgba(0, 0, 0, 0.31);
+    box-shadow: 0 1px 22px -1px rgba(0, 0, 0, 0.31);
     background-color: black;
 
     .App-display {
@@ -31,9 +31,8 @@ body {
         .App-logo {
           margin-bottom: 1.5rem;
           color: $blue-1;
-         
 
-          &>* {
+          & > * {
             margin-bottom: 1rem;
           }
 
@@ -76,7 +75,6 @@ body {
             &:invalid {
               border: 2px solid $danger;
             }
-
           }
 
           .input-tips {
@@ -95,7 +93,6 @@ body {
               background-color: $secondary;
             }
           }
-
         }
 
         .footer-note {
@@ -120,7 +117,6 @@ body {
               cursor: pointer;
               color: $primary;
             }
-
           }
 
           p {
@@ -128,7 +124,7 @@ body {
             font-size: 0.7rem;
             color: $white-4;
 
-            &>* {
+            & > * {
               margin-right: 0.8rem;
 
               &:hover {
@@ -136,9 +132,7 @@ body {
               }
             }
           }
-
         }
-
       }
 
       .App-page {
@@ -147,7 +141,7 @@ body {
         .App-header {
           padding: 1.2rem;
           background-color: $primary;
-          color: #eeeeee;
+          color: #eee;
           display: grid;
           grid-template-columns: 10% 80% 10%;
           align-items: center;
@@ -171,7 +165,7 @@ body {
 
           .left-btn-off,
           .right-btn-off {
-            color: $primary
+            color: $primary;
           }
 
           button {
@@ -185,7 +179,6 @@ body {
               color: $grey-4;
             }
           }
-
         }
 
         .App-content {
@@ -226,7 +219,6 @@ body {
           }
 
           .addData-page {
-
             .addData-home {
               margin: 0 auto;
               padding: 2rem;
@@ -244,7 +236,7 @@ body {
                 margin: 0.6rem;
                 -webkit-box-shadow: 1px 1px 13px -6px #545454;
                 box-shadow: 1px 1px 8px -5px #545454;
-                transition: all .15s ease;
+                transition: all 0.15s ease;
 
                 .icon {
                   font-size: 1.9rem;
@@ -324,7 +316,6 @@ body {
                       cursor: pointer;
                       background-color: $secondary;
                     }
-
                   }
                 }
 
@@ -346,9 +337,7 @@ body {
                     background-color: $green-2;
                   }
                 }
-
               }
-
             }
           }
 
@@ -417,7 +406,6 @@ body {
                       font-size: 0.7rem;
                     }
                   }
-
                 }
 
                 .right-btn {
@@ -433,7 +421,6 @@ body {
                     color: $grey-4;
                   }
                 }
-
               }
             }
 
@@ -442,7 +429,6 @@ body {
               margin-bottom: 1.5rem;
               font-style: italic;
             }
-
           }
 
           .activity-page {
@@ -521,7 +507,6 @@ body {
                   background-color: $secondary;
                 }
               }
-
             }
 
             .delete-btn {
@@ -537,7 +522,6 @@ body {
                 cursor: pointer;
                 font-weight: 600;
               }
-
             }
           }
 
@@ -559,7 +543,6 @@ body {
             i {
               font-size: 6rem;
             }
-
           }
 
           .more-page {
@@ -591,7 +574,6 @@ body {
                   }
                 }
 
-
                 .name {
                   font-size: 1rem;
                   font-weight: 600;
@@ -604,7 +586,6 @@ body {
                   font-weight: 600;
                   text-align: left;
                 }
-
               }
 
               .menu-row {
@@ -628,7 +609,6 @@ body {
                   cursor: pointer;
                   background-color: $white-1;
                 }
-
               }
             }
 
@@ -647,9 +627,9 @@ body {
                   height: 100px;
                   object-fit: cover;
                   border-radius: 50%;
-                  -webkit-box-shadow: 0px 0px 15px 0px rgba(87, 126, 103, 0.75);
-                  -moz-box-shadow: 0px 0px 15px 0px rgba(87, 126, 103, 0.75);
-                  box-shadow: 0px 0px 15px 0px rgba(87, 126, 103, 0.75);
+                  -webkit-box-shadow: 0 0 15px 0 rgba(87, 126, 103, 0.75);
+                  -moz-box-shadow: 0 0 15px 0 rgba(87, 126, 103, 0.75);
+                  box-shadow: 0 0 15px 0 rgba(87, 126, 103, 0.75);
                   margin-bottom: 0.8rem;
                 }
 
@@ -726,22 +706,20 @@ body {
                   }
                 }
               }
-
             }
           }
-
         }
 
         .App-navbar {
           position: relative;
-          top: 0px;
+          top: 0;
           background-color: $grey-3;
-          color: #eeeeee;
+          color: #eee;
           display: flex;
           justify-content: space-around;
           z-index: 99;
 
-          &>* {
+          & > * {
             width: 25%;
             padding: 0.7rem;
             font-size: 0.7rem;
@@ -758,12 +736,9 @@ body {
               cursor: pointer;
               background-color: $primary;
             }
-
           }
         }
-
       }
-
     }
   }
 }

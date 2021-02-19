@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { setCurrentPage } from '../../slices/statusSlice';
 
-
 const HomePage = () => {
   const dispatch = useDispatch();
   const { currentUser } = useSelector(state => state.status);
@@ -30,6 +29,5 @@ const HomePage = () => {
     </div>
   );
 };
-
 
 export default HomePage;

@@ -4,7 +4,6 @@ import { updateUser, pushUser } from '../../../slices/usersSlice';
 import { setCurrentPage, setCurrentUser } from '../../../slices/statusSlice';
 import getHeadImage from '../../../helpers/headImage';
 
-
 const EditUserPage = () => {
   const dispatch = useDispatch();
   const { currentUser } = useSelector(state => state.status);
@@ -37,7 +36,7 @@ const EditUserPage = () => {
           type="text"
           name="name"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={e => setName(e.target.value)}
           minLength="3"
         />
 
@@ -46,7 +45,7 @@ const EditUserPage = () => {
           name="age"
           value={age}
           min="18"
-          onChange={(e) => setAge(parseInt(e.target.value, 10))}
+          onChange={e => setAge(parseInt(e.target.value, 10))}
           className="input-age"
         />
         <div htmlFor="age">Your Age</div>
@@ -59,8 +58,8 @@ const EditUserPage = () => {
               id="sex1"
               name="sex"
               value="male"
-              onChange={(e) => setSex(e.target.value)}
-              checked={sex === "male"}
+              onChange={e => setSex(e.target.value)}
+              checked={sex === 'male'}
             />
             <div htmlFor="sex">Male</div>
           </div>
@@ -72,8 +71,8 @@ const EditUserPage = () => {
               id="sex2"
               name="sex"
               value="female"
-              onChange={(e) => setSex(e.target.value)}
-              checked={sex === "female"}
+              onChange={e => setSex(e.target.value)}
+              checked={sex === 'female'}
             />
             <div htmlFor="sex">Female</div>
           </div>
@@ -85,8 +84,8 @@ const EditUserPage = () => {
               id="sex3"
               name="sex"
               value=""
-              onChange={(e) => setSex(e.target.value)}
-              checked={sex === ""}
+              onChange={e => setSex(e.target.value)}
+              checked={sex === ''}
             />
             <div htmlFor="sex">Secret</div>
           </div>

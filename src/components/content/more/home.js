@@ -60,5 +60,4 @@ const MoreHomePage = () => {
   );
 };
 
-
 export default MoreHomePage;
