@@ -39,7 +39,7 @@ const LoginPage = () => {
       setInputName('');
     } else {
       if (inputName.length === 0) showMessage('Please enter your name!');
-      if (!ready) showMessage('Please make sure the server is online first!');
+      if (!ready) showMessage('Please make sure the server is connected first!');
     }
   };
 
