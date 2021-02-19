@@ -16,7 +16,7 @@ const HomePage = () => {
         {currentUser.name ? currentUser.name.split(' ')[0] : 'Guest'}
         !
       </h2>
-      <i className="fas fa-running fa-2x" />
+      <i className="fas fa-bullseye fa-2x" />
       <h3>What is your Goal today? </h3>
 
       <Link

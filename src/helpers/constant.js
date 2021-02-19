@@ -45,9 +45,9 @@ export const ACTIVITY_ICONS = activity => {
     case 'jogging':
       return (<i className="fas fa-running fa-2x" />);
     case 'pushup':
-      return (<i className="fas fa-dumbbell fa-2x" />);
+      return (<i className="fas fa-heartbeat fa-2x" />);
     case 'skipping':
-      return (<i className="fas fa-biking fa-2x" />);
+      return (<i className="fas fa-headphones-alt fa-2x" />);
     case 'squats':
       return (<i className="fas fa-dumbbell fa-2x" />);
     case 'swimming':
