@@ -1,4 +1,4 @@
-<h1 align="center">🕴️ Track Progress API (backend) 🕴️</h1>
+<h1 align="center">🕴️ Track Progress (Frontend) 🕴️</h1>
 
 > This is the frontend repo for the full stack project - Track Progress App. This is a Full stack project that include Frontend (React/Redux JS) and Backend (Ruby On Rails).
 
@@ -37,7 +37,7 @@ This app lets users track the daily progress made on their exercises. The user c
     git@github.com:Abhigyan001/track-progress-frontend.git
   ```
 
-> Install Necessary Packages.
+### Install Necessary Packages.
 ```sh
 npm install
 ```
