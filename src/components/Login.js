@@ -14,7 +14,7 @@ const LoginPage = () => {
   const [inputName, setInputName] = useState('');
   const dispatch = useDispatch();
   const users = useSelector(state => state.users);
-  const ready = users.length > 0;
+  const ready = true;
 
   const handleLogin = e => {
     e.preventDefault();
