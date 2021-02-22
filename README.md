@@ -28,7 +28,7 @@
 * Add more models
 
 ## Live Demo & Deployment
-The project has been deployed with Heroku. Live Demo(https://track-progress-frontend.herokuapp.com/)
+The project has been deployed with Heroku. [Live Demo](https://track-progress-frontend.herokuapp.com/)
 
 
 ### Install Procedure
