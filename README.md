@@ -28,13 +28,10 @@
 * Add more models
 
 ## Live Demo & Deployment
-The project has been deployed with [Heroku](https://track-progress-frontend.herokuapp.com/)
+The project has been deployed with Heroku. Live Demo(https://track-progress-frontend.herokuapp.com/)
 
-Make sure you are running the backend api on 'https://localhost:3000'
 
 ### Install Procedure
-
-* First clone the track-progress-api project and start rails server. You can access the backend files here: [Backend Files](https://github.com/Abhigyan001/track-progress-api)
 
 * Clone this repo:
   - Clone with SSH:
